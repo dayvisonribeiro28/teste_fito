@@ -1,0 +1,159 @@
+*, form{
+	padding: 0px;
+	margin:0px;
+}
+ul{
+	list-style: none;
+	text-decoration: none;
+}
+.container{
+	width: 100%;
+	min-height: 100vh;
+	margin:auto;
+	background-color: #191919;
+}
+.menu{
+	display: flex;
+	width: 100%;
+	height: 70px;
+	background-color: #1cb1f5;
+	justify-content: flex-end;
+}
+.menu_int{
+	display: flex;
+	width: 95%;
+	margin: auto;
+}
+.logo{
+	display: flex;
+	align-items: center;
+	margin-left: 20px;
+	width: 180px;
+	height: 70px;
+}
+.logo img{
+	width: 180px;
+	height: auto;
+}
+.opcoes{
+	display: flex;
+	justify-content: center;
+	color:#fff;
+	height: 70px;
+	margin-left: 40px;
+	width: 50%;
+}
+.op{
+	margin-left: 15px;
+	margin-right: 15px;
+	font-family: Arial;
+	font-size: 20px;
+	line-height: 70px;
+}
+li.op:hover{
+	background-color: rgba(255,255,255,.3);
+}
+.seta{
+	display: flex;
+	align-items: center;
+	width: 30px;
+	height: 70px;
+	margin-left: 5px;
+}
+.seta img{
+	width: 20px;
+	height: auto;
+}
+.area_especialista{
+	display: flex;
+	display: block;
+	justify-content: flex-end;
+	width: 300px;
+	color: #fff;
+	font-family: Arial;
+	font-size: 20px;
+}
+.formulario{
+	width: 300px;
+	line-height: 70px;
+}
+.botao{
+	display: flex;
+	justify-content: flex-end;
+	cursor: pointer;
+}
+.ul_area_especialista, .ul_area_especialista_mobile{
+	display: none;
+	background-color: #1cb1f5;
+}
+.form{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 20px;
+}
+.form_usuario{
+	padding-top: 20px;
+}
+.input{
+	height: 30px;
+	width: 250px;
+	padding-left: 10px;
+}
+.btn_entrar{
+	width: 150px;
+	font-family: arial;
+	font-size: 16px;
+	padding: 5px;
+	justify-content: flex-start;
+}
+.menumobile{
+	display: flex;
+	display: none;
+	width: 100%;
+	justify-content: flex-end;
+}
+.menumobile_int{
+	display: flex;
+	justify-content: flex-end;
+}
+.menumobile_menu{
+	display: flex;
+	justify-content: flex-end;
+	color: #fff;
+	font-family: Arial;
+	font-size: 20px;
+	width: 50px;
+	line-height: 70px;
+}
+.botao_mobile{
+	display: flex;
+	justify-content: flex-end;
+	cursor: pointer;
+}
+.botao_mobile_form{
+	display: flex;
+	flex-direction: row;
+	padding-left: 15px;
+	width: 300px;
+}
+.ul_menumobile{
+	display: none;
+	background-color: #1cb1f5;
+	width: 300px;
+}
+.li_mobile{
+	height: 70px;
+	line-height: 70px;
+	padding-left: 15px;
+}
+li.li_mobile:hover{
+	background-color: rgba(255,255,255,.3);
+}
+@media only screen and (max-width: 950px){
+.area_especialista, .opcoes{
+	display: none;
+}
+.menumobile{
+	display: block;
+}
+}
