@@ -82,9 +82,22 @@ li.op:hover{
 	justify-content: flex-end;
 	cursor: pointer;
 }
-.ul_area_especialista, .ul_area_especialista_mobile{
+.ul_area_especialista{
 	display: none;
 	background-color: #1cb1f5;
+	position: absolute;
+	padding-right: 15px;
+	padding-left: 15px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.ul_area_especialista_mobile{
+	display: none;
+	background-color: #1cb1f5;
+	padding-right: 15px;
+	padding-left: 15px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 .form{
 	display: flex;
@@ -115,6 +128,7 @@ li.op:hover{
 .menumobile_int{
 	display: flex;
 	justify-content: flex-end;
+
 }
 .menumobile_menu{
 	display: flex;
@@ -138,16 +152,127 @@ li.op:hover{
 }
 .ul_menumobile{
 	display: none;
+	position: absolute;
+	right: 20px;
 	background-color: #1cb1f5;
 	width: 300px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 .li_mobile{
 	height: 70px;
 	line-height: 70px;
 	padding-left: 15px;
+	border-bottom: 1px solid #fff;
 }
 li.li_mobile:hover{
 	background-color: rgba(255,255,255,.3);
+}
+.fitoterapia, .sobre, .produtos, .contato{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height:50vh;
+	width: 100%;
+	padding-top: 30px;
+	background-color: #e8f7fe;
+	border-bottom: 2px solid #03a9f4;
+}
+.contato{
+	padding-bottom: 25px;
+}
+.img_titulo{
+	display: flex;
+	justify-content: center;
+	width: 45px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.img_titulo img{
+	width: 55px;
+	height: auto;
+}
+.titulo{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: ;
+	font-family: Arial;
+	font-size: 35px;
+	line-height: 45px;
+	margin-bottom: 30px;
+}
+.titulo_sobre{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: ;
+	font-family: Arial;
+	font-size: 35px;
+	line-height: 45px;
+	margin-bottom: 30px;	
+}
+.descricao_fitoterapia, .descricao_sobre{
+	background-color: ;
+	width: 90%;
+	text-align: justify;
+	font-family: Arial;
+	font-size: 20px;
+	line-height: 35px;
+}
+.sabonetes_titulo, .sais_titulo{
+	display: flex;
+	justify-content: flex-start;
+	width: 90%;
+	font-size: 20pt;
+	font-family: Arial;
+	padding-bottom: 15px;
+}
+.sabonetes_produtos, .sais_produtos{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-bottom: 25px;
+}
+.imagem_sabonete{
+	width: 200px;
+}
+.imagem_sabonete img{
+	width: 200px;
+	height: auto;
+}
+.img_sais{
+	height:200px; 
+	width: 200px; 
+	background-color: #191919;
+}
+.sabonete_bloco, .sais_bloco{
+	padding-right: 20px; 
+	padding-left: 20px;
+}
+.descricao_sabonete, .descricao_sais{
+	font-size: 16pt;
+	font-family: Arial;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+.descricao_contato{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-around;
+	font-size: 16pt;
+	font-family: Arial;
+}
+.telefones, .email{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	border: 2px solid #03a9f4;
+	padding:25px;
 }
 @media only screen and (max-width: 950px){
 .area_especialista, .opcoes{
@@ -155,5 +280,61 @@ li.li_mobile:hover{
 }
 .menumobile{
 	display: block;
+}
+}
+@media only screen and (max-width: 425px){
+.titulo, .titulo_sobre{
+	font-size: 16pt;	
+}
+.img_titulo{
+	display: flex;
+	justify-content: center;
+	width: 35px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.img_titulo img{
+	width: 45px;
+	height: auto;
+}
+.sabonetes_titulo, .sais_titulo{
+	display: flex;
+	justify-content: flex-start;
+	width: 90%;
+	font-size: 16pt;
+	font-family: Arial;
+	padding-bottom: 15px;
+}
+.descricao_sabonete, .descricao_sais{
+	font-size: 14pt;
+	font-family: Arial;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+.imagem_sabonete{
+	width: 120px;
+}
+.imagem_sabonete img{
+	width: 120px;
+	height: auto;
+}
+.img_sais{
+	height:120px; 
+	width: 120px; 
+	background-color: #191919;
+}
+}
+@media only screen and (max-width: 375px){
+.titulo_sobre{
+	font-size: 16pt;
+}
+.telefones, .email{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	border: 2px solid #03a9f4;
+	padding:25px;
+	margin-bottom: 15px;
 }
 }
